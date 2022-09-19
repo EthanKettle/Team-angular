@@ -1,0 +1,23 @@
+.topBar {
+    width: 100%;
+    display: flex;
+
+    .spacer {
+        flex: 1 1 auto;
+    }
+
+    .search-scss {
+        justify-content: right;
+        padding: 10px;
+
+        button { 
+            width: 70px;
+            text-align: center;
+        }
+        .mat-form-field {
+            width: 500px;
+        }
+
+    }
+}
+

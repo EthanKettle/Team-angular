@@ -1,0 +1,13 @@
+<div>
+    <div class="searched-games">
+        <mat-card class="game-card" *ngFor="let movie of Movies">
+            <div class="card-title-container">
+                <mat-card-title>{{movie?.name}}</mat-card-title>
+            </div>
+            <img mat-card-image [src]="movie?.poster_path.medium">
+            <mat-card-content>
+                <div>{{movie?.overview | slice: 0:80}} ...</div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
