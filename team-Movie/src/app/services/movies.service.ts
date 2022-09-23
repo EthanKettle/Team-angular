@@ -15,14 +15,17 @@ export class MoviesService {
 
   searchByName(searchText: string): Observable<Movies[]> {
     const alteredText = searchText.replace(/\s/g, '+');
-    return this.http.get<Movies[]>(`https://api.themoviedb.org/3/search/company?api_key=${environment.movieAPI}&query=${alteredText}&page=1`).pipe(
-        map(response => response['movies'])
-    )
+    return this.http.get<any>(`
+    https://api.themoviedb.org/3/search/movie?api_key=${environment.movieAPI}&language=en-US&query=${alteredText}&page=1&include_adult=true`)
+    // .pipe(
+    //     map(response => response['movies'])
+    // )
   };
 
   findTrends(): Observable<Movies[]> {
-    return this.http.get<Movies[]>(`https://api.themoviedb.org/3/trending/movie/week?api_key=${environment.movieAPI}`).pipe(
-        map(response => response['movies'])
-    )
+    return this.http.get<any>(`https://api.themoviedb.org/3/trending/movie/week?api_key=${environment.movieAPI}`)
+    // .pipe(
+    //     map(response => response['movies'])
+    // )
   };
 }

@@ -8,11 +8,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './modules/material.module';
 import { SearchComponent } from './components/search/search.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { TrendsComponent } from './components/trends/trends.component';
+import { UserItemsComponent } from './components/user-items/user-items.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent
+    SearchComponent,
+    SideNavComponent,
+    TrendsComponent,
+    UserItemsComponent 
   ],
   imports: [
     BrowserModule,
@@ -20,11 +27,12 @@ import { SearchComponent } from './components/search/search.component';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
   ],
   exports: [
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
