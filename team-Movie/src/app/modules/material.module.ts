@@ -7,8 +7,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list'
-
-
+import { MatIconModule } from '@angular/material/icon'
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [],
@@ -21,6 +21,8 @@ import { MatListModule } from '@angular/material/list'
     MatCardModule,
     MatSidenavModule,
     MatListModule,
+    MatIconModule,
+    MatTooltipModule,
   ],
   exports: [
     MatToolbarModule,
@@ -30,6 +32,8 @@ import { MatListModule } from '@angular/material/list'
     MatCardModule,
     MatSidenavModule,
     MatListModule,
+    MatIconModule,
+    MatTooltipModule,
   ]
 })
 

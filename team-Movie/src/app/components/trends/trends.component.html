@@ -8,6 +8,11 @@
             <mat-card-content>
                 <div>{{movie?.overview | slice: 0:80}} ...</div>
             </mat-card-content>
+            <mat-card-actions>
+                <button mat-mini-fab matTooltip="Add to list of saved Movies" (click)="updateSavedList($event, movie)">
+                    <mat-icon class="material-icons-outlined">verified</mat-icon>
+                </button>
+            </mat-card-actions>
         </mat-card>
     </div>
 </div>
