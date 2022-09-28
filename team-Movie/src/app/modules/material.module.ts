@@ -9,6 +9,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list'
 import { MatIconModule } from '@angular/material/icon'
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [],
@@ -23,6 +24,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatListModule,
     MatIconModule,
     MatTooltipModule,
+    MatTableModule
   ],
   exports: [
     MatToolbarModule,
@@ -34,6 +36,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatListModule,
     MatIconModule,
     MatTooltipModule,
+    MatTableModule
   ]
 })
 

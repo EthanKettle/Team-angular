@@ -7,6 +7,9 @@ import { Movies } from '../interfaces/movies';
   providedIn: 'root'
 })
 export class LocalStorageService {
+  deleteMovie(movie: Movies, USERLIST: ListType) {
+    throw new Error('Method not implemented.');
+  }
   savedMovies = new BehaviorSubject<Movies[]>([]);
   movielist: any;
 
